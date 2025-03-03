@@ -12,13 +12,6 @@ url = "# add the url of the website you want to scrape here"
 driver.get(url)
 html_content = driver.page_source
 
-# Parse the HTML content with BeautifulSoup
-soup = BeautifulSoup(html_content, 'html.parser')
-
-
-# add the url of the website you want to scrape here
-
-
 soup = BeautifulSoup(html_content, 'html.parser')
 # add the tag of the element you want to scrape here (e.g. h1, h2, h3)
 titles = soup.find_all('# add the tag of the element you want to scrape here (e.g. h1, h2, h3, div)')
