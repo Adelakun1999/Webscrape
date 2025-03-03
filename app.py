@@ -8,11 +8,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 service = Service(ChromeDriverManager().install())
 
 driver = webdriver.Chrome(service=service)
-url = 'https://www.popsugar.com/sex/sexting-examples-49094910'
+url = "# add the url of the website you want to scrape here"
 driver.get(url)
 html_content = driver.page_source
 
 # Parse the HTML content with BeautifulSoup
+
 soup = BeautifulSoup(html_content, 'html.parser')
 # add the tag of the element you want to scrape here (e.g. h1, h2, h3)
 titles = soup.find_all('p')
