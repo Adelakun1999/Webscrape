@@ -16,7 +16,7 @@ html_content = driver.page_source
 
 soup = BeautifulSoup(html_content, 'html.parser')
 # add the tag of the element you want to scrape here (e.g. h1, h2, h3)
-titles = soup.find_all('p')
+titles = soup.find_all('# add the tag of the element you want to scrape here')
 
 # add the name of the csv file you want to save the data in here
 with open('data.csv', 'w', encoding='utf-8') as file:
